@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Trophies & Awards</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#0b1020; --panel:#0f162e; --text:#e6e9ef; --muted:#a7b0bd;
+    --shadow:0 10px 30px rgba(0,0,0,.35); --card:#121a35;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    background:radial-gradient(1200px 600px at 20% -10%,#172041 0%,var(--bg) 60%);color:var(--text);
+  }
+  header{padding:48px 20px 16px;text-align:center}
+  h1{margin:0 0 8px;font-size:clamp(28px,4vw,40px)}
+  .lead{margin:0 auto;max-width:750px;color:var(--muted)}
+  .grid{
+    width:100%;max-width:1100px;margin:28px auto 80px;padding:0 18px;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;
+  }
+  .card{
+    background:linear-gradient(180deg,var(--card),#0d1429);border:1px solid #1d2a52;
+    border-radius:18px;box-shadow:var(--shadow);overflow:hidden;
+    transition:transform .2s,box-shadow .2s;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+  figure{margin:0;display:grid;grid-template-rows:auto 1fr;height:100%}
+  img{width:100%;height:260px;object-fit:cover;display:block;background:#0a0f21}
+  figcaption{padding:16px 16px 18px}
+  h3{margin:0 0 6px;font-size:18px;line-height:1.3}
+  .tag{display:inline-block;margin-top:8px;padding:6px 10px;border:1px dashed #2b3a6b;border-radius:999px;color:var(--muted);font-size:12px}
+  footer{text-align:center;color:var(--muted);padding:24px}
+</style>
+</head>
+<body>
+  <header>
+    <h1>My Trophies &amp; Awards</h1>
+    <p class="lead">A clean gallery of medals and trophies.</p>
+  </header>
+
+  <main class="grid">
+    <!-- 1) Ooredoo Marathon -->
+    <article class="card">
+      <figure>
+        <img src="Marathon oreedo.jpeg" alt="Ooredoo Marathon finisher medal, 5 KM, 2025">
+        <figcaption>
+          <h3>Ooredoo Marathon — 5K Finisher (Participation)</h3>
+          <div class="tag">Ooredoo Marathon • 5 KM</div>
+        </figcaption>
+      </figure>
+    </article>
+
+    <!-- 2) Nuit du Code -->
+    <article class="card">
+      <figure>
+        <img src="nuit de code.jpeg" alt="Nuit du Code 2025 trophy from LFQ Voltaire">
+        <figcaption>
+          <h3>Nuit du Code 2025 — School Coding Competition</h3>
+          <div class="tag">Lycée Franco-Qatarien Voltaire</div>
+        </figcaption>
+      </figure>
+    </article>
+
+    <!-- 3) Volunteering / Referee -->
+    <article class="card">
+      <figure>
+        <img src="Volonteering at the jeux de moyen orient.jpeg" alt="Volunteering referee medal for Les Jeux du Moyen-Orient">
+        <figcaption>
+          <h3>Les Jeux du Moyen-Orient — Volunteered as a referee</h3>
+          <div class="tag">Community Service</div>
+        </figcaption>
+      </figure>
+    </article>
+
+    <!-- 4) Karate Trophy -->
+    <article class="card">
+      <figure>
+        <img src="Karate tournement from 2019.jpeg" alt="Silver karate trophy from 2019">
+        <figcaption>
+          <h3>Karate Trophy — 2019</h3>
+          <div class="tag">Martial Arts</div>
+        </figcaption>
+      </figure>
+    </article>
+  </main>
+
+  <footer>© Your Awards Gallery</footer>
+</body>
+</html>
